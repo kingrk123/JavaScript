@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <script type="text/javascript">
+    function btnClick() {
+        var x = confirm("Are You Sure want to Delete ?");
+        if(x==true){
+           document.write("Record Delete..<br><a href='confirm.html'>Back</a>");    //Document Write
+        }else{
+            alert("Cancel...");
+        }
+    }
+    </script>
+    <title>Confirm</title>
+</head>
+<body>
+    <div>
+        <button type="button" onclick="btnClick()">Submit</button>
+    </div>
+</body>
+</html>

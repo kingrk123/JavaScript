@@ -1,0 +1,33 @@
+<html>
+ <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+ <input type="radio" name="format" value="A"/>A
+ <input type="radio" name="format" value="B"/>B
+ <input type="radio" name="format" value="C"/>C
+
+ <br/> <br/>
+
+ <input type="checkbox" name="lang" value="ENG"/>ENG
+ <input type="checkbox" name="lang" value="HIN"/>HIN
+ <input type="checkbox" name="lang" value="TEL"/>TEL
+
+ 
+<script>
+$(document).ready(function(){
+  $('input[type="radio"][name="format"]').change(function(){
+     var a=$('input[type="radio"][name="format"]:checked').val();
+	 alert(a);
+  });
+
+  $('input[type="checkbox"][name="lang"]').change(function(){
+     var b= $('input[type="checkbox"][name="lang"]:checked').length;
+	 alert(b);
+  });
+});
+</script>
+</div>
+</body>
+</html>

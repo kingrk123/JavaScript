@@ -1,0 +1,49 @@
+//String
+console.log('Hello,World')
+
+let email = 'ranvirkar.kiran@gmail.com';
+console.log(email);
+
+//String Concatenation
+let f_Name = 'Kiran';
+let L_Name = 'Ranvirkar';
+
+let Full_Name = f_Name +' ' + L_Name;
+console.log(Full_Name);
+
+//getting characters
+console.log(Full_Name[2]);
+
+//String Length
+console.log(Full_Name.length);
+
+//String Methods
+console.log(Full_Name.toUpperCase());
+let result = Full_Name.toLowerCase();
+console.log(result,Full_Name);
+
+let index = email.indexOf('.');
+console.log(index);
+
+// common String method
+let email = 'ranvirkar.kiran@gmail.com';
+console.log(email);
+
+let result = email.lastIndexOf('m');
+console.log(result);
+
+let len = email.length
+console.log(len);
+
+let result1 = email.slice(2,5);
+console.log(result1);
+
+let result2 = email.substr(4,10);
+console.log(result2);
+
+let result3 = email.replace('n','j');
+console.log(result3);
+
+
+
+

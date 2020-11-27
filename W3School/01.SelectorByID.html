@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Paragraph By Id</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("Button").click(function(){
+                $("*#ide").hide()
+            })
+        })
+    </script>
+</head>
+<body>
+    <h2>This is Heading</h2>
+    <p>Click On Me and see magic</p>
+    <p id="ide">Click on me</p>
+    <p id="ide">Click on me too</p>
+    <button>Click on me and Hide Paragraph</button>
+</body>
+</html>

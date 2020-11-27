@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <title>Prompt</title>
+    <script type="text/javascript">
+        function Create() {
+            var folderName = prompt("Folder Name","New_Folder");    //prompt("message", "default value");
+               if(folderName=="") {
+                   document.write("Name Can't be Empty");
+               } else if(folderName==null) {
+                   document.write("You canceled..");
+               } else {
+                  document.getElementById("msg").innerHTML+= "Folder Created : " + folderName + "<br>";
+               }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <button type="button" onclick="Create()">New Folder</button>
+    </div>
+</body>
+</html>
